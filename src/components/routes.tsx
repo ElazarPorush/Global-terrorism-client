@@ -3,6 +3,7 @@ import AttacksTypes from "./pages/attacks/AttacksTypes";
 import Map from "./pages/regions/Map";
 import Home from "./pages/Home";
 import TopGroups from "./pages/regions/TopGroups";
+import AttackTypesByYear from "./pages/years/AttackTypesByYear";
 
 export const pages = [
     {
@@ -19,6 +20,11 @@ export const pages = [
         path: 'MapCities',
         element: <Map />,
         display: 'Highest casualty cities',
+    },
+    {
+        path: 'attackTypesByYear',
+        element: <AttackTypesByYear /> ,
+        display: 'Attacks Types By Year',
     },
     {
         path: 'TopGroups',
