@@ -13,11 +13,15 @@ body {
   /* height: 40vh; */
 }
 
-.graph-types {
+.graph-types, .map {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 70vh;
   width: 100vw;
+}
+
+.map {
+  height: 90vh;
 }
 
