@@ -17,7 +17,8 @@ export default function NavBar() {
         <NavDrawer open={isOpen} size="medium">
           {openBtn}
           {pages.map((page) => (
-            <NavItem
+             <NavItem
+             style={{display: page.display? 'block' : 'none'}}
               key={page.path}
               href={'/' + page.path}
               as="a"

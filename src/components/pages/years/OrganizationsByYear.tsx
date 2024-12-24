@@ -41,7 +41,7 @@ export default function OrganizationsByYear() {
             <h1>Organizations by year</h1>
             <div>
                 <label htmlFor="year"></label>
-                <input type="number" id="year" min={1970} max={1995} value={year} onChange={(e) => setYear(+e.target.value)}/>
+                <input type="number" id="year" min={1970} max={2017} value={year} onChange={(e) => setYear(+e.target.value)}/>
                 <button onClick={fetchData}>Search</button>
             </div>
             <Pie style={{ width: '100%', height: '400px' }} options={{ responsive: true }} data={graphTypes} />

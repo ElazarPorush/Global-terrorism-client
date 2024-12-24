@@ -5,12 +5,13 @@ import Home from "./pages/Home";
 import TopGroups from "./pages/regions/TopGroups";
 import AttackTypesByYear from "./pages/years/AttackTypesByYear";
 import OrganizationsByYear from "./pages/years/OrganizationsByYear";
+import HighestCityOfOrganization from "./pages/regions/HighestCityOfOrganization";
+import Add from "./pages/crud/Add";
 
 export const pages = [
     {
         path: '',
-        element: <Home /> ,
-        display: 'Home',
+        element: <Home />
     },
     {
         path: 'AttacksTypes',
@@ -37,7 +38,15 @@ export const pages = [
         element: <OrganizationsByYear />,
         display: 'Organizations By Year',
     },
-
+    {
+        path: 'highestCityOfOrganization',
+        element: <HighestCityOfOrganization />,
+        display: 'Highest City Of Organization',
+    },
+    {
+        path: 'add',
+        element: <Add />,
+    }
 ];
 
 export const routes = createBrowserRouter(pages);

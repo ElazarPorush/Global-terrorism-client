@@ -6,7 +6,7 @@ import { getAllData } from '../../../fetchs/getAllData';
 export default function AttackTypesByYear() {
     const [data, setYearsData] = useState<TopGroup[]>([]);
     const [from, setFrom] = useState<number>(1970);
-    const [to, setTo] = useState<number>(1996);
+    const [to, setTo] = useState<number>(2017);
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const fetchData = async () => {
@@ -40,13 +40,13 @@ export default function AttackTypesByYear() {
 
     const setOption = (num: number) => {
         if (num === 10) {
-            setFrom(1986);
-            setTo(1996);
+            setFrom(2007);
+            setTo(2017);
             setIsOpen(false);
             fetchData();
         } else if (num === 5) {
-            setFrom(1991);
-            setTo(1996);
+            setFrom(2012);
+            setTo(2017);
             setIsOpen(false);
             fetchData();
         } else if (num === 0) {
@@ -68,9 +68,10 @@ export default function AttackTypesByYear() {
                 </select>
             </div>
             <div style={{ display: isOpen ? 'flex' : 'none' }}>
-                <input type="number" min={1970} max={1995} value={from} onChange={(e) => setFrom(+e.target.value)} placeholder="since" /> - <input type="number" min={1971} max={1996} value={to} onChange={(e) => setTo(+e.target.value)} placeholder="until" />
+                <input type="number" min={1970} max={2017} value={from} onChange={(e) => setFrom(+e.target.value)} placeholder="since" /> - <input type="number" min={1971} max={2018} value={to} onChange={(e) => setTo(+e.target.value)} placeholder="until" />
                 <button onClick={fetchData}>Search</button>
             </div>
+            <p>Amount of attacks: {data.reduce((a, b) => a + b.count, 0)}</p>
             <Bar style={{ width: '100%', height: '400px' }} options={{ responsive: true }} data={graphTypes} />
         </div>
     )
