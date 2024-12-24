@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { getAllData } from '../../../fetchs/getAllData';
 import { Pie } from 'react-chartjs-2';
 import { TopGroup } from '../../../types/topGroups';

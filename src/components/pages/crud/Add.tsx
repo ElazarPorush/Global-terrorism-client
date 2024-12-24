@@ -1,5 +1,5 @@
 import { Button, Input, Label } from '@fluentui/react-components'
-import React, { FormEvent, useState } from 'react'
+import { FormEvent, useState } from 'react'
 import { addNewAttack } from '../../../fetchs/addNewAttack';
 import { AddAttack } from '../../../types/addAttack';
 

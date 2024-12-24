@@ -1,5 +1,5 @@
 import { Hamburger, NavDrawer, NavItem } from '@fluentui/react-nav-preview';
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { pages } from './routes';
 
 export default function NavBar() {

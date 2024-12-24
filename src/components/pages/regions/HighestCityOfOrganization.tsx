@@ -5,7 +5,6 @@ import 'leaflet/dist/leaflet.css'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useState } from 'react'
 import { getAllData } from '../../../fetchs/getAllData'
-import { Spinner } from '@fluentui/react-components'
 import { CircularProgress } from '@mui/material'
 
 export default function HighestCityOfOrganization() {

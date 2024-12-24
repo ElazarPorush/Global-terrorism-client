@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { TopGroup } from '../../../types/topGroups';
-import { Bar, Pie } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 import { getAllData } from '../../../fetchs/getAllData';
 
 export default function OrganizationsByYear() {
