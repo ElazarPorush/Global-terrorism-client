@@ -41,12 +41,12 @@ export default function TopGroups() {
 
     return (
         <div className='graph-types'>
+            <h1>Top Groups</h1>
             <div>
                 <label htmlFor="city">Search By City</label>
                 <input onChange={(e) => setCity(e.target.value)} id="city" type="text" />
                 <input type="submit" value={"Search"} onClick={() => fetchData()} />
             </div>
-            <h1>Top Groups</h1>
             {data.length > 0 && <Pie style={{ width: '20%', height: '200px' }} options={{ responsive: true }} data={graphTypes} />}
         </div>
 

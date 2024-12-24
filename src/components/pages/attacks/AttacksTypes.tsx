@@ -36,7 +36,7 @@ export default function AttacksTypes() {
         labels: labels,
         datasets: [
         {
-        label: "דירוג סוג התקפה לפי נפגעים",
+        label: "Attack type ranking according to casualties",
         backgroundColor: [
           "rgba(250, 192, 19, 0.8)",
           "rgba(14, 200, 160, 0.8)",
@@ -53,7 +53,7 @@ export default function AttacksTypes() {
 
   return (
     <div className='graph-types'>
-        <h1>סטטיסטיקת סוג התקפה לפי נפגעים</h1>
+        <h1>Attack type statistics by casualty</h1>
         <Bar style={{ width: '100%', height: '400px' }} options={{ responsive: true }} data={graphTypes}  />
     </div>
 
