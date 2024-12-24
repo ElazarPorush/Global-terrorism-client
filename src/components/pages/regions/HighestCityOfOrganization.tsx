@@ -19,7 +19,7 @@ export default function HighestCityOfOrganization() {
                 return;
             }
             setLoading(true);
-            const data = await getAllData(`http://localhost:8263/api/relationships/deadliest-regions/${organization}`);
+            const data = await getAllData(`api/relationships/deadliest-regions/${organization}`);
             setCoords(data);
             setLoading(false);
         } catch (err) {

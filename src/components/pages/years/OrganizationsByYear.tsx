@@ -9,7 +9,7 @@ export default function OrganizationsByYear() {
 
     const fetchData = async () => {
         try {
-            const response: TopGroup[] = await getAllData(`http://localhost:8263/api/relationships/groups-by-year/${year}`);
+            const response: TopGroup[] = await getAllData(`api/relationships/groups-by-year/${year}`);
             setYearsData(response);
         } catch (err) {
             console.log(err);

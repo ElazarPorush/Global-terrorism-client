@@ -11,7 +11,7 @@ export default function AttackTypesByYear() {
 
     const fetchData = async () => {
         try {
-            const response: TopGroup[] = await getAllData(`http://localhost:8263/api/analysis/incident-trends?from=${from}&to=${to}`);
+            const response: TopGroup[] = await getAllData(`api/analysis/incident-trends?from=${from}&to=${to}`);
             setYearsData(response);
         } catch (err) {
             console.log(err);

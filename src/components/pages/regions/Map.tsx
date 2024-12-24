@@ -15,7 +15,7 @@ const Map = () => {
         const getLocations = async () => {
             try {
                 setLoading(true);
-                const data = await getAllData("http://localhost:8263/api/analysis/highest-casualty-regions");
+                const data = await getAllData("api/analysis/highest-casualty-regions");
                 const filteredData = data.filter((item: { city: string, average: number, location: { lat: number, lng: number } }) => item.location && item.location.lat && item.location.lng);
                 setCoord(filteredData);
                 setLoading(false);

@@ -7,7 +7,7 @@ export default function Add() {
     const [attack, setAttack] = useState<AddAttack>({ iyear: 1980, imonth: 1, city: '', latitude: 0, longitude: 0, attacktype1_txt: '', gname: '', nkill: 0, nwound: 0 });
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-        await addNewAttack('http://localhost:8263/api/analysis/add-new-attack/', attack);
+        await addNewAttack('api/analysis/add-new-attack/', attack);
         alert('Attack added successfully');
     };
     return (

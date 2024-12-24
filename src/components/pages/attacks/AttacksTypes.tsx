@@ -22,7 +22,7 @@ export default function AttacksTypes() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await getAllData("http://localhost:8263/api/analysis/deadliest-attack-types/");
+                const response = await getAllData("api/analysis/deadliest-attack-types/");
                 setData(response); 
             } catch (err) {
                 console.log(err);   

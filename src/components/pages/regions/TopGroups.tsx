@@ -12,7 +12,7 @@ export default function TopGroups() {
             if (city === '') {
                 return;
             }
-            const response = await getAllData(`http://localhost:8263/api/relationships/top-groups/${city}`);
+            const response = await getAllData(`api/relationships/top-groups/${city}`);
             setData(response);
         } catch (err) {
             console.log(err);
